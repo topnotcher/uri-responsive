@@ -179,7 +179,7 @@ array("name" => "Enable Weather Alert:",
     	wp_deregister_script( 'jquery' );  
 
 		
-		wp_register_script( 'jquery', get_template_directory_uri() . '/jquery.js', array(), null, false );  
+		wp_register_script( 'jquery', get_template_directory_uri() . '/js/jquery.js', array(), null, false );  
 		 
 		 // Register the script: 
 		wp_register_script( 'global-header-slide-script', get_template_directory_uri() . '/js/slide.js', array( 'jquery' ) );
