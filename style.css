@@ -1765,6 +1765,9 @@ CLEAR & ALIGNMENT
 CUSTOM Style
 *************************************************************************************/
 
+h1,h2 {
+	border-bottom: 1px solid #F2F2F2; 
+}
 #content { 
 	padding:3px;
 }
