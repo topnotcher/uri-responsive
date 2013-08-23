@@ -11,6 +11,14 @@
 <link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.png" />
 
 <?php
+	if ( class_exists('Zend_Layout') ) : 
+		$zfl = Zend_Layout::getMvcInstance()->getView();
+	  	echo $zfl->headLink();
+		echo $zfl->headScript();
+	endif;	
+?>
+
+<?php
 /**
  *  Stylesheets and Javascript files are enqueued in theme-functions.php
  */
