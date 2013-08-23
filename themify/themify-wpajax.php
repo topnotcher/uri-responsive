@@ -47,7 +47,7 @@ function themify_save(){
 	$temp = array();
 	foreach($data as $a){
 		$v = explode("=", $a);
-		$temp[$v[0]] = urldecode( str_replace('+',' ',preg_replace_callback('/%([0-9a-f]{2})/i', function($foo) { return chr(hexdec('\\1')); }, urlencode($v[1]))) );
+		$temp[$v[0]] = urldecode( str_replace('+',' ',preg_replace_callback('/%([0-9a-f]{2})/i', function($foo) { return chr(hexdec($foo[1])); }, urlencode($v[1]))) );
 	}
 	set_data($temp);
 	_e('Your settings were saved', 'themify');
