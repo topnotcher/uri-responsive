@@ -8,23 +8,30 @@
 /////////////////////////////////////////////
 ?>
 
-<?php global $post_layout, $hide_title, $hide_image, $hide_title, $hide_meta, $hide_date, $display_content; ?>
-<?php $layout = themify_get('setting-default_layout'); /* set default layout */ if($layout == '' ) : $layout = 'sidebar2'; endif; ?>
-<?php $post_layout = themify_get('setting-default_post_layout'); ?>
-<?php $page_title = themify_get('setting-hide_page_title'); ?>
-<?php $hide_title = themify_get('setting-default_post_title'); ?>
-<?php $unlink_title = themify_get('setting-default_unlink_post_title'); ?>
-<?php $hide_image = themify_get('setting-default_post_image'); ?>
-<?php $unlink_image = themify_get('setting-default_unlink_post_image'); ?>
-<?php $hide_meta = themify_get('setting-default_post_meta'); ?>
-<?php $hide_date = themify_get('setting-default_post_date'); ?>
+<?php 
+global $post_layout, $hide_title, $hide_image, $hide_title, $hide_meta, $hide_date, $display_content; 
 
-<?php $display_content = themify_get('setting-default_layout_display'); ?>
-<?php $post_image_width = themify_get('image_width'); ?>
-<?php $post_image_height = themify_get('image_height'); ?>
-<?php $page_navigation = themify_get('hide_navigation'); ?>
-<?php $posts_per_pages = themify_get('posts_per_page'); ?>
+$post_layout = themify_get('setting-default_post_layout'); 
 
+$layout = themify_get('setting-default_layout'); 
+if ( empty($layout) ) $layout = 'sidebar2';
+
+
+$page_title = themify_get('setting-hide_page_title');
+$hide_title = themify_get('setting-default_post_title');
+$unlink_title = themify_get('setting-default_unlink_post_title');
+$hide_image = themify_get('setting-default_post_image');
+$unlink_image = themify_get('setting-default_unlink_post_image');
+$hide_meta = themify_get('setting-default_post_meta');
+$hide_date = themify_get('setting-default_post_date');
+
+$display_content = themify_get('setting-default_layout_display');
+$post_image_width = themify_get('image_width');
+$post_image_height = themify_get('image_height');
+$page_navigation = themify_get('hide_navigation');
+$posts_per_pages = themify_get('posts_per_page');
+
+?>
 <!-- layout-container -->
 <div id="layout" class="clearfix pagewidth <?php echo $layout; ?>">
 	
