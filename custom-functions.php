@@ -1,11 +1,4 @@
 <?php
-/******************************************************/
-//         Get the Trajan font                        //
-/******************************************************/
-add_action( 'wp_head', function() { ?>
-   <script type="text/javascript" src="http://use.typekit.com/qcq6uhe.js"></script>
-   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<?php });
 
 /********************************************************/
 //	URI Options admin menu - weather and general alert	//
