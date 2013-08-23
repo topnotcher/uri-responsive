@@ -177,9 +177,9 @@ array("name" => "Enable Weather Alert:",
 		
 		// Deregister the included library  
     	wp_deregister_script( 'jquery' );  
-  
-    	// Register the library from Google's CDN  
-   		wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', array(), null, false );  
+
+		
+		wp_register_script( 'jquery', get_template_directory_uri() . '/jquery.js', array(), null, false );  
 		 
 		 // Register the script: 
 		wp_register_script( 'global-header-slide-script', get_template_directory_uri() . '/js/slide.js', array( 'jquery' ) );
