@@ -203,7 +203,7 @@ array("name" => "Enable Weather Alert:",
 		// $media : screen , media, handheld or print.
 	
 		//Google Web Fonts embedding
-		wp_enqueue_style( 'custom-google-fonts', 'http://fonts.googleapis.com/css?family=Merriweather');
+		//wp_enqueue_style( 'custom-google-fonts', 'http://fonts.googleapis.com/css?family=Merriweather');
 	
 		
 	
