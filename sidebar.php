@@ -9,15 +9,6 @@
 			</ul>
 		</div>
 
-		<!--REVISE CODE TO HIDE CATEGORY LIST ON SIDEBAR
-        <div class="widget">
-			<h4 class="widgettitle"><?php //_e('Category','themify'); ?></h4>
-			<ul>
-			<?php //wp_list_categories('show_count=1&title_li='); ?>
-			</ul>
-		</div>
-        -->
-
 	<?php endif; ?>
 
 	<div class="clearfix">
