@@ -1,0 +1,756 @@
+@media only screen and (max-width: 980px) {
+
+	
+/************************************************************************************
+	STRUCTURE
+*************************************************************************************/
+	.pagewidth {
+		max-width: 100%;
+	}
+	#global-menu ul {
+       padding-left: 10px;
+	}
+	
+	#global-menu li a {
+    padding: 5px 1.6em;
+	}
+	
+	.sf {
+    
+    padding: 2px;
+    width: 35%;
+}
+	
+	.sidebar2 #contentwrap {
+    	padding-left: 10px;
+	}
+
+	
+	.header-widget .widget,
+	.sidebar2 #contentwrap,
+	.sidebar2 #sidebar,
+	#toplogo-bar .logo,
+	#topdept-bar{
+		padding-left: 10px !important;
+		
+	}
+	.social-widget{
+		padding-right: 10px;	
+	}
+	#footerwrap footer{
+	padding-left: 10px;	
+	}
+
+	
+/************************************************************************************
+	GRID
+*************************************************************************************/
+	.col4-1,
+	.col4-2,
+	.col4-3,
+	.col3-1,
+	.col3-2,
+	.col2-1
+	{
+		margin-left: 2%;
+	}
+	.col4-1 {
+		max-width: 23%;
+	}
+	.col4-2, .col2-1 {
+		max-width: 48%;
+	}
+	.col4-3 {
+		max-width: 72%;
+	}
+	.col3-1 {
+		max-width: 31%;
+	}
+	.col3-2 {
+		max-width: 62%;
+	}
+	
+/************************************************************************************
+	LAYOUTS
+*************************************************************************************/
+	/* grid4 */
+	.grid4 .post {
+		width: 23.125%;
+		margin-left: 2.5%;
+	}
+
+	/* grid3 */
+	.grid3 .post {
+		width: 31%;
+		margin-left: 3.5%;
+	}
+
+	/* grid2 */
+	.grid2-thumb .post,
+	.grid2 .post {
+		width: 48%;
+		margin-left: 3.75%;
+	}
+
+}
+/************************************************************************************
+       Switch to mobile icons before gold bar wraps 
+*************************************************************************************/
+@media screen and (max-width: 990px) {
+/************************************************************************************
+      HIDE FOLLWOING ELEMENTS
+*************************************************************************************/
+        #panel,
+        #navsun,
+        #main-nav,
+        .social-widget,
+        .drawer,
+        #global-menu {
+         display: none;
+}
+#topnav {
+ display: block !important;
+}
+#panel {
+ display: none;
+ border-bottom: 1px solid #777;
+}
+#panel .center {
+ width: auto;
+}
+#panel .cell {
+ display: block;
+ vertical-align: middle;
+ border: 0px;
+ margin: 0px;
+ padding: 0px;
+ width: auto !important;
+}
+#panel .research {
+ width: auto !important;
+}
+#panel ul {
+ list-style-type: none;
+ margin: 0px;
+ padding: 0px;
+ font-size: medium;
+ background: transparent !important;
+ background-image: none;
+ max-width: 100%;
+}
+#panel ul li.parentcat {
+ margin: 0px;
+ padding: 0px;
+ padding-right: 10px;
+ padding-left: 10px;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ font-weight: bold;
+ color: #edbf07;
+ font-size: small;
+ display: block;
+ background-color: #044364;
+}
+#panel ul li.parentcat:hover {
+ background-color: #044364;
+}
+#panel ul li {
+ list-style-type: none;
+ margin: 0px;
+ padding: 0px;
+ font-size: small;
+}
+#panel ul li a {
+ display: block;
+ color: #033a69;
+ padding-right: 20px;
+ padding-left: 20px;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ text-decoration: none;
+ background-color: #fbf3b4;
+}
+#panel .odd {
+ background-color: #f0d159;
+}
+
+
+
+
+}
+
+
+/************************************************************************************
+	Styles for Droid X - 854 x 480
+*************************************************************************************/
+@media screen and (max-width: 854px) {
+}
+	
+/************************************************************************************
+	Styles for iPad 1 and iPad 2 - 1024 x 768
+*************************************************************************************/
+@media screen and (max-width: 768px) {
+	
+	.pagewidth {
+		max-width: 100%;
+	}
+	
+
+	sidebar2 #contentwrap,
+	.sidebar2 #sidebar,
+	#toplogo-bar .logo,
+	#topdept-bar{
+		padding-left: 10px !important;
+		
+	}
+/************************************************************************************
+	HIDE FOLLWOING ELEMENTS
+*************************************************************************************/
+        #panel,
+        #navsun,
+	#main-nav,
+	.social-widget,
+        .drawer,
+	#global-menu,
+	#urihomebutton,
+	#sidebar ul ul ul,
+	#footer .center img,
+	.wmtop img,
+        #footer .center,
+        #toplogo-bar .quick,
+	#footer .right{
+		display: none;	
+	}
+#topnav {
+ display: block !important;
+}
+	
+	#toplogo-bar .quick {
+    float: right;
+    padding-right: 10px;
+    width: 50%;
+	}
+	
+	#topdept-bar {
+    height: auto;
+
+	}
+	
+	#topdept-bar #site-logo {
+    float: left;
+    position: static;
+	width: 25%;
+	padding: 10px 0 0;
+	}
+	
+	#topdept-bar #deptsec {
+    margin-left: 25px;
+	margin-top: 5px
+	}
+	
+	#deptsec #site-title{
+	font: 2em/150%;	
+	}
+#panel {
+ display: none;
+ border-bottom: 1px solid #777;
+}
+#panel .center {
+ width: auto;
+}
+#panel .cell {
+ display: block;
+ vertical-align: middle;
+ border: 0px;
+ margin: 0px;
+ padding: 0px;
+ width: auto !important;
+}
+#panel .research {
+ width: auto !important;
+}
+#panel ul {
+ list-style-type: none;
+ margin: 0px;
+ padding: 0px;
+ font-size: medium;
+ background: transparent !important;
+ background-image: none;
+ max-width: 100%;
+}
+#panel ul li.parentcat {
+ margin: 0px;
+ padding: 0px;
+ padding-right: 10px;
+ padding-left: 10px;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ font-weight: bold;
+ color: #edbf07;
+ font-size: small;
+ display: block;
+ background-color: #044364;
+}
+#panel ul li.parentcat:hover {
+ background-color: #044364;
+}
+#panel ul li {
+ list-style-type: none;
+ margin: 0px;
+ padding: 0px;
+ font-size: small;
+}
+#panel ul li a {
+ display: block;
+ color: #033a69;
+ padding-right: 20px;
+ padding-left: 20px;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ text-decoration: none;
+ background-color: #fbf3b4;
+}
+#panel .odd {
+ background-color: #f0d159;
+}
+
+	
+/************************************************************************************
+	STRUCTURE
+*************************************************************************************/
+	/* reset all to fullwidth */
+	#contentwrap,
+	#content,
+	#sidebar-alt, 
+	#sidebar {
+		width: 97% !important;
+		float: none !important;
+		clear: both !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	
+	.sidebar2 #sidebar-alt,
+	.sidebar2 #sidebar{
+    width: 22%;
+	border-top: 2px solid #d9AA00;
+	padding: 10px 0;
+}
+	
+/************************************************************************************
+	HEADER
+*************************************************************************************/
+	/* reset absolute elements to static */
+	#header .social-widget, #main-nav  {
+		position: static !important;
+		float: none;
+		clear: both;
+	}
+	
+	/* header */
+	#header {
+		height: auto;
+		background-color: #FBDFE4;
+		clear:both;
+	}
+	
+	/* header widget */
+	.header-widget {
+		position: static !important;
+		float: none;
+		text-align: left;
+		clear: both;
+		margin: 0;
+	}
+	.header-widget .widget {
+		margin: 0;
+	
+	}
+	
+	
+	
+	/* social widget */
+	#header .social-widget {
+		padding: 5px 0 0;
+	}
+
+	/* search form */
+	#header #searchform {
+		position: absolute;
+		left: inherit;
+		right: 0;
+		width: 150px;
+	}
+	#header #searchform #s {
+		float: right;
+	}
+	#header #searchform input#s:focus {
+		width: 150px;
+	}
+	
+	/* site logo */
+	#site-logo {
+		padding: 15px 10px 10px 0;
+		margin: 0;
+	}
+
+	/* site description */
+	#site-description {
+		margin: 0 0 10px;
+	}
+
+/************************************************************************************
+	MAIN NAV
+*************************************************************************************/
+	#main-nav {
+		height: auto;
+		padding: 10px 0 0;
+	}
+	#main-nav a {
+		min-height: 0;
+		padding: 0 10px 8px;
+	}
+	#main-nav a span{
+		display: none;
+	}
+	
+	.sidebar2 #sidebar .widget{
+		margin: 0;	
+	}
+	
+	.sidebar2 #sidebar{
+	padding: 0;	
+	}
+	
+	.pagenav {
+   
+    width: 95%;
+}
+
+/************************************************************************************
+	FOOTER
+*************************************************************************************/
+	.footer-nav-wrap,
+	.footer-text {
+		width: 100%;
+		float: none;
+		clear: both;
+		text-align: left;
+	}
+	
+	.wmtop {
+    margin: 0 auto;
+    padding: 4px;
+    width: 99%;
+	}
+
+.mobilefooter {
+ background-color: #101a35;
+ display: block !important;
+ margin-right: 10px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ text-align: center;
+ font-size: small;
+ color: #fff;
+}
+#footer .mobilefooter a {
+ color: #ddb93a;
+ border-bottom: none;
+}
+#footer .mobilefooter a:hover {
+ border-bottom: none;
+}
+
+.mobilewordmark {
+ display: block;
+ text-align: center;
+ margin-bottom: 0px;
+}
+.mobilewordmark img {
+ width: 100px;
+ height: 42px;
+}
+
+	
+	#footerwrap footer{
+	padding-left: 10px;	
+	}
+
+}
+
+/************************************************************************************
+	Styles for iPhone 4 - 960 x 640
+*************************************************************************************/
+@media screen and (max-width: 640px) {
+	
+	#topdept-bar #deptsec {
+    margin-left: 25px;
+    padding-left: 0;
+    width: 68%;
+	margin-top: 0px;
+	}
+	#deptsec #site-title {
+    font-size: 2em;
+    }
+	
+	#deptsec #site-tagline {
+    line-height: 1.1em;
+	}
+	
+/************************************************************************************
+	LAYOUTS
+*************************************************************************************/
+	/* grid4 */
+	.grid4 .post, .sidebar1 .grid4 .post {
+		width: 100%;
+		margin-left: 0;
+		float: none;
+	}
+
+	/* grid3 */
+	.sidebar2 .grid3 .post, .sidebar1 .grid3 .post {
+		width: 100%;
+		margin-left: 0;
+		float: none;
+	}
+       .list-large-image .post-image {
+        float:none !important;
+        }
+	
+	.wmtop p {
+     	margin: 15px 0;
+	}
+	
+}
+
+
+/************************************************************************************
+	Styles for iPhone 480 x 320, and Droid X: 854 x 480 and Google Nexus One 800 x 480
+*************************************************************************************/
+@media screen and (max-width: 480px) {
+
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+
+	#toplogo-bar .quick,
+	#topdept-bar #site-logo {
+		display: none;	
+	}
+        #toplogo-bar .sf {
+ vertical-align: middle;
+ width: 93%;
+  margin: 15px 15px 15px 15px;
+        padding: 2px;
+}
+  #toplogo-bar {
+    height: auto;
+        }
+
+	#topdept-bar {
+    height: auto;
+	}
+	#topdept-bar #deptsec {
+    margin-left: 0;
+    margin-top: 5px;
+	padding-top: 0;
+	}
+	
+	#deptsec #site-tagline  {
+		color: #ffffff;
+		margin: 0;
+		font-size: 1em;
+		line-height: 1.0em;
+		font-style: normal;
+		padding-top: 5px;
+		padding-bottom: 0;
+	}
+	
+	#deptsec #site-title  {
+    font-size: 1.9em;
+	}
+	.sidebar2 #contentwrap{
+		padding-left: 0px !important;
+		
+	}
+
+	#toplogo-bar .logo,
+	#topdept-bar,
+	.sidebar2 #sidebar,
+	.sidebar2 #content,
+	.sidebar2 #sidebar,
+	.sidebar2 #sidebar-alt{
+		padding-left: 10px !important;
+		
+	}
+
+	
+	/************************************************************************************
+	GRID
+	*************************************************************************************/
+	.col4-1,
+	.col4-2, .col2-1,
+	.col4-3,
+	.col3-1,
+	.col3-2	 {
+		margin-left: 0;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.sidebar2 .grid3 .post, 
+	.sidebar1 .grid3 .post {
+
+   		width: 100%;
+	}
+	
+
+	/************************************************************************************
+	HEADER
+	*************************************************************************************/
+	/* site logo */
+	#site-logo {
+		font-size: 42px;
+		text-align: left;
+		padding-right: 90px;
+		width: auto;
+	}
+	
+	/* site description */
+	#site-description {
+		text-align: left;
+		margin: 0 0 10px;
+	}
+	
+	/* searchform */
+	#header #searchform {
+		left: inherit;
+		top: 20px;
+		right: 0;
+		width: 150px;
+		display: none;
+	}
+	#header #searchform #s {
+		float: right;
+		width: 40px;
+		display: none;
+	}
+	
+	/* social widget */
+	.social-widget {
+		position: static !important;
+		float: none;
+		padding: 0;
+		display: none;
+	}
+	
+	/* top nav */
+	#top-nav {
+		padding-right: 0;
+		display: none;
+	}
+	#top-nav a {
+		font-size: 85%;
+		margin-right: 3px;
+		display: none;
+	}
+
+	/************************************************************************************
+	SLIDER
+	*************************************************************************************/
+	.slider {
+		font-size: 85%;
+	}
+
+	/************************************************************************************
+	LAYOUTS
+	*************************************************************************************/
+	/* post */
+	.post {
+		width: 100% !important;
+		margin-left: 0 !important;
+		float: none !important;
+	}
+	
+	/* post title */
+        /* .post-title {
+		font-size: 2em !important;
+	} */
+
+	/************************************************************************************
+	POST NAV
+	*************************************************************************************/
+	.post-nav .prev, .post-nav .next {
+		display: block;
+		width: 100%;
+		clear: both;
+		margin-bottom: 10px;
+	}
+	
+	/************************************************************************************
+	COMMENTS
+	*************************************************************************************/
+	.commentlist {
+		padding-left: 0;
+	}
+	.commentlist .commententry {
+		clear: left;
+	}
+	.commentlist .avatar {
+		float: left;
+		width: 40px;
+		height: 40px;
+		margin: 0 10px 10px 0;
+	}
+
+	/* commentlist sub-levels */
+	.commentlist ul, .commentlist ol {
+		margin: 0 0 0 7%;
+	}
+
+	/************************************************************************************
+	FOOTER
+	*************************************************************************************/
+	#footer-logo {
+		position: static !important;
+	}
+	.footer-nav {
+		padding: 0;
+	}
+	
+	.footer .center{
+	    display: none;	/*hide footer seal and text on small screen*/
+	}
+	.wmtop {
+    
+    text-align: left;
+    
+}
+	
+	.wmtop img {
+    float: none;
+}
+	.wmtop p {
+    
+	padding: 0; 
+}
+	.wmtop p {
+    
+    margin: 10px 0 0 0;
+}
+
+}
+
+/************************************************************************************
+	Styles for Blackberry and Android SDK 320 x 240
+*************************************************************************************/
+@media screen and (max-width: 320px) {
+	#deptsec #site-tagline{
+		display: none;	
+	}
+
+	
+	
+}

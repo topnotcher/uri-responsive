@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	
+	<folders>
+		<images src="uploads/" />
+	</folders>
+	
+	<panel title="Settings">
+		
+		<tab title="General">
+			
+                        <custom-module title="Custom Facebook URL" function="facebook_url" />
+                        <custom-module title="Custom Twitter URL" function="twitter_url" />
+                        <custom-module title="Custom Google+ URL" function="google_plus_url" />
+                        <custom-module title="Custom Youtube URL" function="youtube_url" />
+			<custom-module title="Custom Feed URL" function="custom_feed_url" />
+			<custom-module title="Header Code" function="header_html" />
+			<custom-module title="Footer Code" function="footer_html" />
+			<custom-module title="Search Settings" function="search_settings" />
+			<custom-module title="Feed Settings" function="feed_settings" />
+				
+		</tab>
+
+		<tab title="Theme Settings">
+			
+			<custom-module title="Header Slider (appears on homepage only)" function="header_slider" />
+			<custom-module title="Footer Slider (appears on all pages)" function="footer_slider" />
+		        <custom-module title="URI Letterhead Print" function="enable_letterhead_print" />
+		        <custom-module title="URI Home Page Button" function="enable_home_button" />
+		        <custom-module title="Default Index Layout (archive, category, search, tag pages, etc.)" function="default_layout" />
+		        <custom-module title="Default Post Layout (single post)" function="default_post_layout" />
+		        <custom-module title="Default Page Layout" function="default_page_layout" />
+			<custom-module title="Footer Widgets" function="footer_widgets" />
+                        <custom-module title="Exclude Search Form" function="exclude_search_form" />
+                        <custom-module title="Image Script (img.php) Settings" function="img_settings" />
+		
+		</tab>
+
+	</panel>
+	
+	<panel title="Styling">
+	
+		<tab title="Site Logo">
+
+
+			<element title="Site Logo" selector="#site-logo a">
+				<module name="site_logo" target="uploads/logo/" />
+			</element>
+
+		</tab>		
+
+		<tab title="Custom CSS">
+			
+			<element title="Custom CSS" selector="html">
+				<module name="custom_css" />
+			</element>
+			
+		</tab>
+		
+	</panel>
+
+</config>
