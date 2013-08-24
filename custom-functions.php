@@ -1,9 +1,8 @@
 <?php
 
-/********************************************************/
-//	URI Options admin menu - weather and general alert	//
-/********************************************************/
-
+/**
+ * URI Options admin menu - weather and general alert	//
+ */
 $shortname = 'alert';
 
 $options = array(
@@ -82,10 +81,9 @@ function theme_uri_network_options(){
 	require 'theme-options.php';
 } 
 
-
-/********************************************************/
-//			Enqueue Custom Stylesheets and Scripts	   //
-/********************************************************/
+/**
+ *		Enqueue Custom Stylesheets and Scripts
+ */
 
 function uri_responsive_enqueue_scripts() {
 		
