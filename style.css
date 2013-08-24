@@ -422,19 +422,11 @@ SITE DESCRIPTION
 #site-description {
 	font: italic 14px/100% "Lucida Grande","Lucida Sans Unicode", Arial, sans-serif;
 	position: absolute;
-	top: 25px;/*ORIGINAL VALUE 114PX*/
+	top: 25px;
 	color: #999;
 	margin-left: 210px; /*added code*/
 }
 
-/* ORIGINAL CODE FOR nav bar
-#nav-bar {
-	background: #000;
-	width: 100%;
-	padding: 12px 0 4px;
-	min-height: 28px;
-} */
-/*REVISED CODE to hide nav bar */
 #nav-bar {
 	display: none;
 }
@@ -443,7 +435,6 @@ SITE DESCRIPTION
 HEADER WIDGET
 ================================================ */
 .header-widget {
-	/*position: absolute;*/
 	margin: 0;
 	background-color:transparent;
 	padding: 0;
@@ -671,10 +662,10 @@ MAIN NAVIGATION
 /* main level link title */
 #main-nav a span {
 	color: #999;
-	display: none;/*ORIGINAL VALUE: block*/
+	display: none;
 	font-style: italic;
 	font-size: 90%;
-	margin-top: 0px;/*ORIGINAL VALUE: 2px*/
+	margin-top: 0px;
 	text-transform: none;
 }
 /* main level link :hover */
