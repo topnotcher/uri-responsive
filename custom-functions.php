@@ -5,32 +5,34 @@
 /********************************************************/
 
 $shortname = 'alert';
-$options = array (
-$shortname."_general" => 
-array("name" => "General Alert",
-	  "desc" => "Enter a description for the alert message.",
-	  "id" => $shortname."_general",
-	  "type" => "text"),
 
-$shortname."_weather" => 
-array("name" => "Weather Alert",
-	  "desc" => "Enter a description for the weather alert message.",
-	  "id" => $shortname."_weather",
-	  "type" => "text"),
-
-$shortname."_general_enable" => 
-array("name" => "Enable General Alert:",
-	  "desc" => "Check this box if you would like to ENABLE the alert message.",
-	  "id" => $shortname."_general_enable",
-	  "type" => "checkbox",
-	  "std" => "false"),
-
-$shortname."_weather_enable" => 
-array("name" => "Enable Weather Alert:",
-	  "desc" => "Check this box if you would like to ENABLE the weather alert message.",
-	  "id" => $shortname."_weather_enable",
-	  "type" => "checkbox",
-	  "std" => "false")
+$options = array(
+	$shortname.'_general' => array(
+		'name' => 'General Alert',
+		'desc' => 'Enter a description for the alert message.',
+		'id' => $shortname.'_general',
+		'type' => 'text'
+	),
+	$shortname.'_weather' => array(
+		'name' => 'Weather Alert',
+		'desc' => 'Enter a description for the weather alert message.',
+		'id' => $shortname."_weather",
+		'type' => 'text'
+	),
+	$shortname.'_general_enable' => array(
+		'name' => 'Enable General Alert:',
+		'desc' => 'Check this box if you would like to ENABLE the alert message.',
+		'id' => $shortname.'_general_enable',
+		'type' => 'checkbox',
+		'std' => 'false'
+	),
+	$shortname.'_weather_enable' => array(
+		'name' => 'Enable Weather Alert:',
+		'desc' => 'Check this box if you would like to ENABLE the weather alert message.',
+		'id' => $shortname.'_weather_enable',
+		'type' => 'checkbox',
+		'std' => 'false'
+	)
 );
 
 
