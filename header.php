@@ -96,7 +96,7 @@
 					<?php themify_image("src=".themify_get('setting-site_logo_image_value')."&w=".themify_get('setting-site_logo_width')."&h=".themify_get('setting-site_logo_height')."&alt=".get_bloginfo('name')."&before=<div id='site-logo'><a href='".get_option('home')."'>&after=</a></div>"); ?>
 				<?php } else { ?><div id="site-logo">
                 	<a href="<?php echo get_option('home'); ?>/  ">
-                    <img width="190" height="90" alt="Department Banner Image" src="<?php bloginfo('template_directory'); ?>/images/uri-minidefault.jpg" /></a></div><?php } ?>
+                    <img width="190" height="90" alt="Department Banner Image" src="<?php bloginfo('template_directory'); ?>/images/iStock_000019865267XSmall-crop.jpg" /></a></div><?php } ?>
         
 			<div id="deptsec" class="pagewidth">
 				<h1 id="site-title"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
