@@ -83,15 +83,6 @@ function theme_uri_network_options(){
 
 add_action('wp_enqueue_scripts', 'uri_responsive_enqueue_scripts');
 function uri_responsive_enqueue_scripts() {
-	///////////////////
-	//Enqueue scripts
-	///////////////////
-	//wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
-	// $handle : Name that wordpress handles this script with.
-	// $src : location of the script file, if it's not included already.
-	// $deps : Other scripts THIS scripts depends upon. Default - array()
-	// $ver : Version of the script. Optional. - Default - WordPress version.
-	// $in_footer : Loads the script in footer. - Default - false.
 		
 	// Deregister the included library  
 	wp_deregister_script( 'jquery' );  
@@ -108,20 +99,10 @@ function uri_responsive_enqueue_scripts() {
 	//wp_enqueue_script( 'expMenu-script', get_template_directory_uri() . '/js/expMenu.js', array('jquery'), false, true );
 		
 	
-	///////////////////
-	//Enqueue styles
-	///////////////////
-	//wp_enqueue_style( $handle, $src, $deps, $ver, $media );
-	// $handle : Name of the stylesheet.
-	// $src : Path to the stylesheet.
-	// $deps : Styles that should be loaded before this style.
-	// $ver : Version of the style.
-	// $media : screen , media, handheld or print.
-	
 	//Google Web Fonts embedding
 	//wp_enqueue_style( 'custom-google-fonts', 'http://fonts.googleapis.com/css?family=Merriweather');
 	
-		//Print letterhead styling
+	//Print letterhead styling
 	if (themify_get('setting-letterhead_print_enabled')) {
 		wp_register_style( 'uri-responsive-print-styles', get_template_directory_uri() . '/print.css', array(), '', 'print' );  
 		wp_enqueue_style( 'uri-responsive-print-styles');
@@ -129,12 +110,10 @@ function uri_responsive_enqueue_scripts() {
 }
 	
 	
-//add_action( $tag, $function_to_add, $priority, $accepted_args );
 //The $priority parameter defaults to 10, and the $accepted_args parameter defaults to 1. 
 //If we want our scripts or styles to be enqueued earlier, we simply lower the value for $priority from the default.
 add_action('wp_enqueue_scripts', 'uri_responsive_enqueue_scripts2', 5);
-function uri_responsive_enqueue_scripts2(){
-		
+function uri_responsive_enqueue_scripts2(){		
 	//Global-header styling
 	wp_register_style( 'global-header-styles', get_template_directory_uri() . '/global-header.css', array(), '', 'all' );  
 	wp_enqueue_style( 'global-header-styles');
@@ -149,4 +128,5 @@ function kill_autocomplete() {
 	   '1.0' );
    wp_enqueue_script('kill-ac');
 }
+
 add_action('wp_enqueue_scripts', 'kill_autocomplete');
