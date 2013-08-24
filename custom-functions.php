@@ -36,30 +36,22 @@ $options = array(
 );
 
 
-add_action((is_multisite() ? 'network_' : '').'admin_menu','add_uri_options_admin_menus');
+add_action((is_multisite() ? 'network_' : '').'admin_menu','uri_options_admin_menus');
 
-function add_uri_options_admin_menus() {
+function uri_options_admin_menus() {
 	global $options;
 
-	if (isset($_POST["update_settings"])) {
-		foreach ($options as $value) 
-			update_site_option($value['id'], $_REQUEST[$value['id']]);
-
-		foreach ($options as $value) {
-			if(isset($_REQUEST[$value['id']])) { 
-				//update_option($value['id'], $_REQUEST[$value['id']]);
-				update_site_option($value['id'], $_REQUEST[$value['id']]);
-			} 
-			else { 
-				//delete_option($value['id']);
-				delete_site_option($value['id']);
-			}
-		}
-		?>  
-			<div id="message" class="updated">Settings saved</div>  
-		<?php
-	}
 	add_menu_page('URI Network', 'URI Network', 'manage_network', 'uri_network_options', 'theme_uri_network_options', null, 59);
+
+	if ( isset($_POST['update_settings']) ) {
+		foreach ($options as $value) {
+			if (isset($_REQUEST[$value['id']]) ) 
+				update_site_option($value['id'], $_REQUEST[$value['id']]);
+			else 
+				delete_site_option($value['id']);
+		}
+		echo '<div id="message" class="updated">Settings saved</div>';
+	}
 }
 
 // TODO: add hyperlink recognition
