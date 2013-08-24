@@ -576,7 +576,7 @@ add_action( 'wp_head', 'themify_viewport_tag' );
 		register_sidebar(array(
 			'name' => 'Sidebar_Nav',
 			'before_widget' => '<div class="widgetwrap"><div id="%1$s" class="widget %2$s"><div class="expList">',
-			'after_widget' => '</div></div>',
+			'after_widget' => '</div></div></div>',
 			'before_title' => '<h4 class="widgettitle">',
 			'after_title' => '</h4>',
 		));
