@@ -1753,13 +1753,23 @@ CLEAR & ALIGNMENT
 }
 
 /* clearfix */
-.clearfix:after, .widget li:after, #body:after, #footer:after, footer:after, .pagenav:after, #main-nav:after, .menu:after, .gallery:after, #content:after
-{ visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
-.clearfix, .widget li, #body, #footer, footer, .pagenav, #main-nav, .menu, .gallery, #content
-{ display: inline-block; }
+.clearfix:after, .widget li:after, #body:after, #footer:after, 
+footer:after, .pagenav:after, #main-nav:after, 
+.menu:after, .gallery:after, #content:after { 
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " "; 
+	clear: both; 
+	height: 0;
+}
+.clearfix, .widget li, #body, #footer, footer, .pagenav, #main-nav, .menu, .gallery, #content { 
+	display: inline-block;
+}
 /* clearfix for ie7 */
-.clearfix, .widget li, #body, #footer, footer, .pagenav, #main-nav, .menu, .gallery, #content
-{ display: block; zoom: 1; }
+.clearfix, .widget li, #body, #footer, footer, .pagenav, #main-nav, .menu, .gallery, #content { 
+	display: block; zoom: 1;
+}
 /************************************************************************************
 CUSTOM Style
 *************************************************************************************/
@@ -1806,133 +1816,83 @@ HEADER
 /* toplogo bar (New) */
 
 #toplogo-bar .logo {
-
 	float: left;
-
 	width: 173px;
-
 	margin-right: 50px;
-
 	border-right: 1px solid #0e356b;
-
 	padding-right: 20px;
 
 }
 
 
 #toplogo-bar .logo .urilogo {
-
-text-indent: -99999px;
-
-background-image: url(images/logo.png);
-
-display: block;
-
-width: 171px;
-
-height: 56px;
-
+	text-indent: -99999px;
+	background-image: url(images/logo.png);
+	display: block;
+	width: 171px;
+	height: 56px;
 }
 
 
 #toplogo-bar .logo .urilogo:hover {
-
-background-position: 171px 0;
-
+	background-position: 171px 0;
 }
 
-
 #topdept-bar {
-
-background-color: #233B6E;
-
-border-top: 0px solid #07132a;
-
-padding-top: 0px;
-
-padding-bottom: 5px;
-height: 100px;
+	background-color: #233B6E;
+	border-top: 0px solid #07132a;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	height: 100px;
 }
 
 /* Search Bar (Up Top) */
 
 .sf {
-
 	margin-top: 15px;
-
 	width: 35%;
-
 	float: left;
-
 	vertical-align: middle;
-
 	padding: 4px;
-	        margin-left: 35px;
-
+	margin-left: 35px;
 	-webkit-border-radius: 2px;
-
 	-moz-border-radius: 2px;
-
 	border-radius: 2px;
-
-	        background-color: #fff;
-
-	        -webkit-box-shadow: inset 0px -2px 2px 2px #dadfea;
-
-	        -moz-box-shadow: inset 0px -2px 2px 2px #dadfea;
-
-	        box-shadow: inset 0px -2px 2px 2px #dadfea;
-
+	background-color: #fff;
+	-webkit-box-shadow: inset 0px -2px 2px 2px #dadfea;
+	-moz-box-shadow: inset 0px -2px 2px 2px #dadfea;
+	box-shadow: inset 0px -2px 2px 2px #dadfea;
 }
 
 .sf form {
-
 	margin: 0px;
-
 	padding: 0px;
-
 }
+
 .sf input {
-
 	margin: 0px;
-
 	padding: 0px;
-
 }
 
 .sf input[type="text"] {
-
 	font-size: 0.96em;
-
 	margin: 0px;
-
 	padding: 0px;
 	padding-left: 5px;
-
 	line-height: normal;
-
 	display: inline;
-
 	width: 300px;
-
 	border: 0px;
-
 	color: #555;
-
-background-color: transparent;
+	background-color: transparent;
 
 }
 
 .sf input.submit {
-
 	vertical-align: middle;
-
 	padding-left: 10px;
-
 	border-left: 1px solid #999;
-
 	padding-right: 5px;
-
 	float: right;
 
 }
@@ -1941,7 +1901,7 @@ background-color: transparent;
  * ================================================ */
 #topdept-bar #site-logo {
 	float: left;
-	        position: relative;
+	position: relative;
 	top: 5px;
 }
 
@@ -1960,88 +1920,74 @@ background-color: transparent;
 
 
 #deptsec #site-title {
-font-size: 200%;
-text-transform: none;
-margin: 0px 0px;
-padding: 0;
-color: #fff;
-line-height: 115%;
-font-weight: normal;
-font-style: normal;
-vertical-align: baseline;
+	font-size: 200%;
+	text-transform: none;
+	margin: 0px 0px;
+	padding: 0;
+	color: #fff;
+	line-height: 115%;
+	font-weight: normal;
+	font-style: normal;
+	vertical-align: baseline;
 }
 
 #deptsec #site-title a {
-color: #ddb93a;
+	color: #ddb93a;
 }
 
 #deptsec #site-title a:hover {
-color: #fff;
-text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 #deptsec #site-title h1 {
-text-decoration: none;
+	text-decoration: none;
 }
 
 #deptsec #site-tagline  {
-color: #ffffff;
-margin: 0;
-font-size: 1.0em;
-line-height: 1.3em;
-font-style: normal;
-padding-top: 8px;
+	color: #ffffff;
+	margin: 0;
+	font-size: 1.0em;
+	line-height: 1.3em;
+	font-style: normal;
+	padding-top: 8px;
 }
 
 
 #toplogo-bar .quick {
-
 	width: 30%;
-
 	float: right;
-
 	text-align: right;
-
 	margin-top: 20px;
-	        font-size: 0.8em;
-
+	font-size: 0.8em;
 }
 
 #toplogo-bar .quick img {
-
 	vertical-align: middle;
-
 	margin-right: 5px;
-
 }
 
 #toplogo-bar .quick a {
-
 	color: #fff;
-
 	padding: 6px;
-
 	margin-right: 0px;
-
 }
 
 #toplogo-bar .quick a:hover {
-
 	color: #ddb93a;
-
 }
 
 
 
 /************************************************************************************
- *  * main body of page
- *   * *************************************************************************************/
+ ** main body of page
+ ** *************************************************************************************/
 
 
 
 
 /************************************************************************************
- *  * FOOTER
- *   * *************************************************************************************/
+ ** FOOTER
+ ***************************************************************************************/
 #footerwrap {
 	background-color: transparent;
 	padding: 0px 0 40px;
