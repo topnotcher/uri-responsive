@@ -34,10 +34,7 @@ array("name" => "Enable Weather Alert:",
 );
 
 
-if ( is_multisite() ) 
-	add_action('network_admin_menu','add_uri_options_admin_menus');
-else
-	add_action('admin_menu','add_uri_options_admin_menus');
+add_action((is_multisite() ? 'network_' : '').'admin_menu','add_uri_options_admin_menus');
 
 function add_uri_options_admin_menus() {
 	global $options;
