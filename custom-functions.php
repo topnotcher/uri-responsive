@@ -33,8 +33,11 @@ array("name" => "Enable Weather Alert:",
       "std" => "false")
 );
 
-//add_action('admin_menu','add_uri_options_admin_menus');
+
+if ( is_multisite() ) 
 	add_action('network_admin_menu','add_uri_options_admin_menus');
+else
+	add_action('admin_menu','add_uri_options_admin_menus');
 
 	function add_uri_options_admin_menus() {
 	
