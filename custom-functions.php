@@ -35,8 +35,14 @@ $options = array(
 	)
 );
 
-
 add_action((is_multisite() ? 'network_' : '').'admin_menu','uri_options_admin_menus');
+add_action('wp_enqueue_scripts', 'kill_autocomplete');
+add_action('wp_enqueue_scripts', 'uri_responsive_enqueue_scripts');
+
+//The $priority parameter defaults to 10, and the $accepted_args parameter defaults to 1. 
+//If we want our scripts or styles to be enqueued earlier, we simply lower the value for $priority from the default.
+add_action('wp_enqueue_scripts', 'uri_responsive_enqueue_scripts2', 5);
+
 
 function uri_options_admin_menus() {
 	global $options;
@@ -81,7 +87,6 @@ function theme_uri_network_options(){
 //			Enqueue Custom Stylesheets and Scripts	   //
 /********************************************************/
 
-add_action('wp_enqueue_scripts', 'uri_responsive_enqueue_scripts');
 function uri_responsive_enqueue_scripts() {
 		
 	// Deregister the included library  
@@ -108,11 +113,7 @@ function uri_responsive_enqueue_scripts() {
 		wp_enqueue_style( 'uri-responsive-print-styles');
 	}	
 }
-	
-	
-//The $priority parameter defaults to 10, and the $accepted_args parameter defaults to 1. 
-//If we want our scripts or styles to be enqueued earlier, we simply lower the value for $priority from the default.
-add_action('wp_enqueue_scripts', 'uri_responsive_enqueue_scripts2', 5);
+		
 function uri_responsive_enqueue_scripts2(){		
 	//Global-header styling
 	wp_register_style( 'global-header-styles', get_template_directory_uri() . '/global-header.css', array(), '', 'all' );  
@@ -129,4 +130,4 @@ function kill_autocomplete() {
    wp_enqueue_script('kill-ac');
 }
 
-add_action('wp_enqueue_scripts', 'kill_autocomplete');
+
