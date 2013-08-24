@@ -662,4 +662,3 @@ add_action( 'wp_head', 'themify_viewport_tag' );
 		<?php
 	}
 
-?>
