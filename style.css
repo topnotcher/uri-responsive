@@ -71,7 +71,9 @@ img {
 #content a {
 	text-decoration: none;
 	outline: none;
-	color: #003366;
+/*	font-size: 1.1em;*/
+	color: #003366/*#00355c*/;
+/*	font-weight:700;*/
 }
 #content a:hover {
 	text-decoration: none;
